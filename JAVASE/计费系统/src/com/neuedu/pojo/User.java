@@ -1,4 +1,4 @@
-package com.neuedu;
+package com.neuedu.pojo;
 
 public class User {
 	public String username;
@@ -6,9 +6,24 @@ public class User {
 	public String name;
 	public String email;
 	
-	public User(String string, String string2, String string3, String string4) {
+	public User() {
+		super();
+	};
+	
+	public User(String username, String password) {
 		// TODO Auto-generated constructor stub
+		super();
+		this.username=username;
+		this.password=password;
 	}
+	public User(String username, String password, String name, String email) {
+		super();
+		this.username=username;
+		this.password=password;
+		this.name=name;
+		this.email=email;
+	}
+	
 	public String getUsername() {
 		return username;
 	}
