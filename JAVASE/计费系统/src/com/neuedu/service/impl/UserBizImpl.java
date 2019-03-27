@@ -24,10 +24,6 @@ public class UserBizImpl implements UserBiz{
 	@Override
 	public void login(String username, String password) throws LoginException {
 		// TODO Auto-generated method stub
-		//username 不存在
-		//username password不匹配
-		
-		//1.遍历user数组
 		boolean usernameexits=false;//默认用户不存在
 		for(int i=0;i<users.length;i++) {
 			User user=users[i];
@@ -42,12 +38,12 @@ public class UserBizImpl implements UserBiz{
 				if(_password.equals(password)) {
 					System.out.println("登录成功！！！");
 				}else {// username password 不匹配
-					throw new LoginException("用户名与密码不匹配");
+					throw new LoginException("用户名与密码不匹配!!");
 				}
 			}
 		}
 		if(!usernameexits) {
-			throw new LoginException("用户名不存在 ");
+			throw new LoginException("用户名不存在!! ");
 		}
 	}
 
