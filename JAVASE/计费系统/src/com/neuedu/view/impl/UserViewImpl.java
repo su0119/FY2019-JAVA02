@@ -42,6 +42,7 @@ public class UserViewImpl implements UserView{
 	    			   String name=s.nextLine();
 	    			   System.out.print("请输入电子邮件地址:");
 	    			   String email=s.nextLine(); 
+	    			   System.out.println("注册成功！！");
 	    		 }
 	    		 
 	    	}

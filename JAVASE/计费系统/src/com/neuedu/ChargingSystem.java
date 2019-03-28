@@ -37,7 +37,6 @@ public class ChargingSystem {
 					System.out.println( e.getMessage());
 				}
 		}
-		System.out.println("×¢²á³É¹¦£¡£¡");
 	}
 	
 	
