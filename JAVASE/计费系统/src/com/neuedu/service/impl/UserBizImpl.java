@@ -52,7 +52,6 @@ public class UserBizImpl implements UserBiz{
 		// TODO Auto-generated method stub
 		
 		for(int i=0;i<users.length;i++) {
-			
 			User user=users[i];
 			if(user==null) {
 				continue;
@@ -65,6 +64,8 @@ public class UserBizImpl implements UserBiz{
 		throw new LoginException("用户名不存在!!!");
 	}
 
+	
+	
 	@Override
 	public boolean isusernameexits1(String username) throws RegisterException {
 		// TODO Auto-generated method stub
